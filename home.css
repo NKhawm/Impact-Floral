@@ -1,10 +1,9 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -18,26 +17,20 @@ header {
   width: 100%;
   z-index: 100;
 }
-
 header .toggle {
   display: none;
 }
-
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 80px;
   width: 80px;
   margin-left: 2px;
 }
-
 header h2 {
   position: absolute;
   margin-top: -55px;
   margin-left: 175px;
 }
-
 header nav ul {
   position: fixed;
   width: 100%;
@@ -45,31 +38,24 @@ header nav ul {
   padding: 16px;
   background: #be8ef6;
   left: -100%;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
   list-style: none;
 }
-
 header nav ul li {
   margin-bottom: 16px;
   margin-left: 16px;
 }
-
 header nav ul li a {
   color: white;
   text-decoration: none;
 }
-
 header nav ul:hover {
   color: black;
-  -webkit-transition: ease-in .1s;
-  transition: ease-in .1s;
+  transition: ease-in 0.1s;
 }
-
 header .toggle:checked ~ nav ul {
   left: 0;
 }
-
 header .hamburger {
   position: absolute;
   font-size: 30px;
@@ -80,12 +66,8 @@ header .hamburger {
   margin-right: 16px;
   margin-top: 2px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .img1 {
@@ -93,5 +75,4 @@ header .hamburger {
   margin-top: 100px;
   margin-left: 25px;
   border-radius: 5px;
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

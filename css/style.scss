@@ -1,0 +1,65 @@
+
+//@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@200&family=Noto+Sans&display=swap');
+$myfont: 'Noto Sans', sans-serif;
+$fontsize-base:28px;
+$header-bgcolor :#E9E1E1;
+$footer-color1: #777171;
+$footer-color2:#C4C4C4;
+$font-color1:#000000;
+$font-color2:#ffffff;
+$font-color3:#B8B2B2;
+$color:#7c619b;
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+    .logo{
+        width:72px;
+        height: 72px;
+        position: absolute;
+        left:22.33%;
+        right:56.14%;
+        top:1.23%;
+        bottom:94.49%;
+    }
+    h2{
+        position: absolute;
+        //width: 103px;
+        height: 29px;
+        left: 155px;
+        top: 30px;
+        font-family:$myfont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+.nav-bar{
+    border-top:2px solid gray ;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+    background-color: $header-bgcolor;
+    left:-100%;
+    transition:all.5s;
+    list-style: none;
+    .toggle{
+        display: none;
+    }
+
+}
+nav ul{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    padding:16px;
+    background: $color;
+}
