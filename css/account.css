@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #E9E1E1;
+.header {
+  background-color: #ebd4d4;
 }
 
 .logo {
@@ -19,11 +19,11 @@ header {
   bottom: 94.49%;
 }
 
-h2 {
+#title {
   position: absolute;
   height: 29px;
   left: 155px;
-  top: 30px;
+  top: 10px;
   font-family: "Noto Sans", sans-serif6px;
   font-style: normal;
   font-weight: 400;
@@ -114,53 +114,64 @@ nav ul li:hover {
   margin-left: 120px;
 }
 
-h3 {
-  font-size: 31px;
-  color: #ffffff;
-  font-family: inherit;
-}
-
-#promo, #cat, #wed, #funeral {
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 10px;
+h1 {
+  text-align: center;
+  margin-top: 120px;
   font-weight: 100;
 }
 
-#cat {
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 10px;
-}
-
-img {
-  width: 24em;
-  height: 15em;
-  border-radius: 20px;
-}
-
-.main {
-  display: grid;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 110px;
-}
-
-.phone {
-  background-color: #777171;
-  width: 100%;
-}
-.phone #ad {
+h2 {
   text-align: center;
-  color: #ffffff;
   font-size: 21px;
-  line-height: 30px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+.signIn {
+  margin-top: 20px;
+  border: 1px solid gray;
+  width: 80%;
+  height: 250px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 40px;
+}
+.signIn .text-input {
+  width: 90%;
+  height: 4vh;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.registeration {
+  margin-top: 20px;
+  border: 1px solid gray;
+  width: 80%;
+  height: 490px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 40px;
+}
+.registeration .textInput {
+  width: 90%;
+  height: 4vh;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: inherit;
 }
 
 footer {
   background-color: #C4C4C4;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
   padding: 10px 20px;
 }
 footer p {
@@ -190,4 +201,4 @@ footer .socialMedia ul li a {
 }
 footer .socialMedia ul li a:hover {
   color: #7c619b;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=account.css.map */

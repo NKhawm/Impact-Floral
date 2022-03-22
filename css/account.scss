@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@200&family=Noto+Sans&display=swap');
 $myfont: 'Noto Sans', sans-serif;
 $fontsize-base:21px;
-$header-bgcolor :#E9E1E1;
+$header-bgcolor :#ebd4d4;
 $footer-color1: #777171;
 $footer-color2:#C4C4C4;
 $font-color1:#000000;
@@ -15,21 +14,6 @@ $color:#7c619b;
     align-items: center;
 
 }
-@mixin pic{
-    width:24em;
-    height: 15em;
-    //position:absolute;
-    border-radius: 20px;
-
-}
-@mixin fontmix{
-    position:absolute;
-    margin-top:-50px;
-    margin-left: 10px;
-    font-weight: 100;
-}
-
-
 
 *{
     margin:0;
@@ -37,7 +21,8 @@ $color:#7c619b;
     box-sizing: border-box;
     
 }
-header{
+ 
+.header{
     background-color: $header-bgcolor;
 }
 
@@ -52,21 +37,21 @@ header{
         top:1.23%;
         bottom:94.49%;
     }
-    h2{
+    #title{
         position: absolute;
         //width: 103px;
         height: 29px;
         left: 155px;
-        top: 30px;
+        top: 10px;
         font-family:$myfont +6px;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
 
+
     }
 .nav-bar{
-    //border-top:1px solid gray ;
     border-bottom:1px solid gray ;
     text-align: center;
     position: absolute;
@@ -141,72 +126,82 @@ nav ul{
     margin-left: 120px;
 
 }
-// #firstImage{
-//    @include pic();
-//     margin-top: 130px;
-//     border-radius: 20px;
-// }
-
-// #secondImage{
-//     @include pic();
-//     margin-top:380px ;
-   
-// }
-// #thirdImage{
-//     @include pic();
-//     margin-top: 630px;
-// }
-// #fourthImage{
-//     @include pic();
-//     margin-top:880px;
-// }
-h3{
-    font-size: $fontsize-base + 10px;
-    color:$font-color2;
-    font-family: inherit;
-}
-#promo,#cat,#wed,#funeral{
-    @include fontmix();
-    
-
-}
-#cat{
-    position:absolute;
-    margin-top: -50px;
-    margin-left: 10px;
-    
-
-}
-
-img{
-    @include pic();
-}
-.main{
-    display :grid;
-    justify-content: center;
-    gap:10px;
-    //top:0;
-    margin-top: 110px;
-    
-    
-}
-.phone{
-    background-color: $footer-color1;
-    width:100%;
-    
-   #ad{ 
+h1{
     text-align: center;
-    color:$font-color2;
-    font-size: $fontsize-base;
-    line-height: 30px;
-
+    margin-top: 120px;
+    font-weight: 100;
 }
+h2{
+    text-align: center;
+    font-size: $fontsize-base;
+    font-weight: 100;
+    margin-top: 20px;
+}
+label{
+    font-size: 18px;
+}
+.signIn{
+    margin-top: 20px;
+    border: 1px solid gray;
+    //position: absolute;
+    width: 80%;
+    height: 250px;
+    padding:20px;
+    text-align: center;
+    margin-left: 40px;
+    .text-input{
+        width: 90%;
+        height: 4vh;
+        margin-top:5px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-family: inherit;
+    }
     
 }
+
+.registeration{
+    
+        margin-top: 20px;
+        border: 1px solid gray;
+        //position: absolute;
+        width: 80%;
+        height: 490px;
+        padding:20px;
+        text-align: center;
+        margin-left: 40px;
+        .textInput{
+            width: 90%;
+            height: 4vh;
+            margin-top:5px;
+            margin-bottom: 30px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: $footer-color2;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
     padding:10px 20px;
     p{
         font-size: $fontsize-base - 2px;

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <title>Impact Floral</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
         <img class="logo"src="image/logo.png"alt="logo">
-        <h2>Impact Floral</h2>
+        <h2 id="title">Impact Floral</h2>
     </div>
     <div class="nav-bar">
     
@@ -48,34 +48,84 @@
     </div>
        
     </header>
+    
    
     <!-- Main section -->
     
     <section class="main">
-        <div id="firstImage">
-            <a href="#"><img src="image/firstP.jpg" alt="first"></a>
-            <h3 id="promo">Mother's Day Special</h3>
+        <h1>My Account</h1>
+
+        <!-- Sign in -->
+        <h2>Sign in</h2>
+        <div class="signIn">
+           
+            <form method="get" action="home.html" name="vform" >
+                
+                <div id="username">
+                    <label for="username">Username</label><br>
+                <input class="text-input" name="username" type="text" placeholder="Enter your username or email ">
+                <div id="nameError" class="valError"></div>
+            </div>
+
+            <div id="password">
+                <label for="password" >Password</label><br>
+                <input class="text-input" name="password" type="password"placeholder="Enter your password" >
+                </div>
+
+            <div>
+                <input type="submit" name="signIn" value="Sign in" class="signInBtn">
+            </div>
+            </form>
         </div>
-        <div id="secondImage">
-            <a href="#"><img  src="image/pic12.jpg" alt="second"></a>
-        <h3 id="cat">Categories</h3>
+
+    <!-- Register -->
+    <h2>Create Account</h2>
+    <div class="registeration">
+       
+        <form method="get" action="home.html" name="vform" >
+           
+            <div id="username_div">
+                <label for="username">Username</label><br>
+            <input class="textInput" name="username" type="text" placeholder="Enter your username ">
+            <div id="name_error" class="val_error"></div>
         </div>
-        <div id="thirdImage">
-            <a href="#"><img  src="image/wedding.jpg" alt="wedding"></a>
-        <h3 id="wed">Weddings</h3>
+
+        <div id="email_div">
+            <label for="email" >Email</label><br>
+            <input class="textInput" name="email" type="text"placeholder="Enter your email " >
+            <div id="email_error" class="val_error"></div>
         </div>
-        <div id="fourthImage">
-            <a href="#"><img  src="image/funeral.jpg" alt="funeral"></a>
-        <h3 id="funeral">Funeral Flowers</h3>
-        </div>
+
         
-    </section>
+        <div id="age_div">
+            <label for="age" >Age</label><br>
+            <input class="textInput" name="age" type="number" placeholder="Enter your age">
+            <div id="age_error" class="val_error"></div>
+        </div>
+
+        <div id="password_div">
+            <label for="password" >Password</label><br>
+            <input class="textInput" name="password" type="password"placeholder="Enter your password" >
+            </div>
+        <div id="pass_confirm_div">
+            <label for="password_confirmation">Confirm Password</label><br>
+            <input class="textInput" name="password_confirmation" type="password" placeholder="Confirm your password..">
+            <div id="password_error" class="val_error"></div>
+        </div>
+        <div>
+            <input type="submit" name="register" value="Register" class="btn">
+        </div>
+
+       
+
+
+        </form>
+    </div>
+        
+     </section>
     
-    <!-- Contact number -->
-    <section class="phone">
-        <p id="ad">Can't find what you are looking for? Call us here 07476235803 </p>
-    </section>
-   
+    
+    
     <!-- Footer -->
    
     <footer>
