@@ -34,7 +34,7 @@ h2 {
 .nav-bar {
   border-bottom: 1px solid gray;
   text-align: center;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 5vh;
   margin-top: -50px;
@@ -125,4 +125,14 @@ img {
   justify-content: center;
   gap: 10px;
   margin-top: 110px;
+}
+
+.phone {
+  background-color: #777171;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  font-size: 21px;
+  border-radius: 10px;
+  line-height: 30px;
 }/*# sourceMappingURL=style.css.map */
