@@ -37,7 +37,7 @@ h2 {
   position: fixed;
   width: 100%;
   height: 5vh;
-  margin-top: 70px;
+  margin-top: -50px;
   z-index: 100;
 }
 .nav-bar .toggle {
@@ -45,7 +45,7 @@ h2 {
 }
 
 nav ul {
-  position: fixed;
+  position: absolute;
   margin-top: 40px;
   width: 100%;
   height: 60vh;
@@ -114,35 +114,15 @@ nav ul li:hover {
   margin-left: 120px;
 }
 
-#firstImage {
+img {
   width: 24em;
   height: 15em;
-  position: absolute;
-  border-radius: 20px;
-  margin-top: 130px;
   border-radius: 20px;
 }
 
-#secondImage {
-  width: 24em;
-  height: 15em;
-  position: absolute;
-  border-radius: 20px;
-  margin-top: 380px;
-}
-
-#thirdImage {
-  width: 24em;
-  height: 15em;
-  position: absolute;
-  border-radius: 20px;
-  margin-top: 630px;
-}
-
-#fourthImage {
-  width: 24em;
-  height: 15em;
-  position: absolute;
-  border-radius: 20px;
-  margin-top: 880px;
+.main {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 110px;
 }/*# sourceMappingURL=style.css.map */
