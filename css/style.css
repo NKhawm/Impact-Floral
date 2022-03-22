@@ -114,6 +114,25 @@ nav ul li:hover {
   margin-left: 120px;
 }
 
+h3 {
+  font-size: 31px;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+#promo, #cat, #wed, #funeral {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 10px;
+  font-weight: 100;
+}
+
+#cat {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 10px;
+}
+
 img {
   width: 24em;
   height: 15em;
@@ -148,6 +167,9 @@ footer p {
   font-size: 19px;
   text-align: center;
 }
+footer .socialMedia {
+  margin-left: -50px;
+}
 footer .socialMedia ul {
   margin-top: 10px;
   display: flex;
@@ -157,4 +179,11 @@ footer .socialMedia ul li {
   margin-top: 10px;
   list-style: none;
   font-size: 30px;
+}
+footer .socialMedia ul li a {
+  color: #000000;
+}
+footer .socialMedia ul li a:hover {
+  opacity: 0.5;
+  color: #7c619b;
 }/*# sourceMappingURL=style.css.map */

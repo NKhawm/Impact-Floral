@@ -22,6 +22,12 @@ $color:#7c619b;
     border-radius: 20px;
 
 }
+@mixin fontmix{
+    position:absolute;
+    margin-top:-50px;
+    margin-left: 10px;
+    font-weight: 100;
+}
 
 
 
@@ -154,6 +160,24 @@ nav ul{
 //     @include pic();
 //     margin-top:880px;
 // }
+h3{
+    font-size: $fontsize-base + 10px;
+    color:$font-color2;
+    font-family: inherit;
+}
+#promo,#cat,#wed,#funeral{
+    @include fontmix();
+    
+
+}
+#cat{
+    position:absolute;
+    margin-top: -50px;
+    margin-left: 10px;
+    
+
+}
+
 img{
     @include pic();
 }
@@ -190,15 +214,25 @@ footer{
 
     }
     .socialMedia{
+        margin-left: -50px;
+       
     
         ul{
             margin-top: 10px;
             display:flex;
+            
             justify-content: space-around;
             li{
                 margin-top: 10px;
                 list-style: none;
                 font-size: 30px;
+               a{
+                   color:$font-color1;
+                   &:hover{
+                       opacity:.5;
+                       color:$color;
+                   }
+               }
             }
         }
     }
