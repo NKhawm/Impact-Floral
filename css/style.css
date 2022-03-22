@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #E9E1E1;
+}
+
 .logo {
   width: 72px;
   height: 72px;
@@ -20,7 +24,7 @@ h2 {
   height: 29px;
   left: 155px;
   top: 30px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif6px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -28,12 +32,13 @@ h2 {
 }
 
 .nav-bar {
-  border-top: 2px solid gray;
+  border-bottom: 1px solid gray;
   text-align: center;
   position: fixed;
   width: 100%;
+  height: 5vh;
+  margin-top: 70px;
   z-index: 100;
-  background-color: #E9E1E1;
 }
 .nav-bar .toggle {
   display: none;
@@ -41,8 +46,103 @@ h2 {
 
 nav ul {
   position: fixed;
+  margin-top: 40px;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   padding: 16px;
-  background: #be8ef6;
+  background: #7c619b;
+  left: -100%;
+  transition: all 0.5s;
+  list-style: none;
+}
+nav ul li {
+  margin-bottom: 46px;
+  margin-left: 16px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 21px;
+}
+nav ul li:hover {
+  background-color: #B8B2B2;
+  padding: 10px;
+  border-radius: 20px;
+  transition: ease-in-out;
+}
+
+.toggle:checked ~ nav ul {
+  left: 0;
+}
+
+.hamburger {
+  position: absolute;
+  font-size: 30px;
+  align-items: center;
+  right: 0;
+  top: 0;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.homebtn {
+  position: absolute;
+  font-size: 30px;
+  align-items: center;
+  left: 0;
+  top: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.basketbtn {
+  position: absolute;
+  font-size: 30px;
+  align-items: center;
+  top: 0;
+  margin-top: 5px;
+  margin-left: -15px;
+}
+
+.accountbtn {
+  position: absolute;
+  font-size: 30px;
+  align-items: center;
+  top: 0;
+  margin-top: 5px;
+  margin-left: 120px;
+}
+
+#firstImage {
+  width: 24em;
+  height: 15em;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 130px;
+  border-radius: 20px;
+}
+
+#secondImage {
+  width: 24em;
+  height: 15em;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 380px;
+}
+
+#thirdImage {
+  width: 24em;
+  height: 15em;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 630px;
+}
+
+#fourthImage {
+  width: 24em;
+  height: 15em;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 880px;
 }/*# sourceMappingURL=style.css.map */
