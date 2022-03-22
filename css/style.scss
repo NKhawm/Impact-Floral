@@ -168,13 +168,38 @@ img{
 }
 .phone{
     background-color: $footer-color1;
-    text-align: center;
     width:100%;
-    //height: em;
+    
+   #ad{ 
+    text-align: center;
     color:$font-color2;
     font-size: $fontsize-base;
-    border-radius: 10px;
     line-height: 30px;
-    //margin-left: 190px;
+
+}
     
+}
+footer{
+    background-color: $footer-color2;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    p{
+        font-size: $fontsize-base - 2px;
+        text-align: center;
+
+    }
+    .socialMedia{
+    
+        ul{
+            margin-top: 10px;
+            display:flex;
+            justify-content: space-around;
+            li{
+                margin-top: 10px;
+                list-style: none;
+                font-size: 30px;
+            }
+        }
+    }
 }

@@ -129,10 +129,32 @@ img {
 
 .phone {
   background-color: #777171;
-  text-align: center;
   width: 100%;
+}
+.phone #ad {
+  text-align: center;
   color: #ffffff;
   font-size: 21px;
-  border-radius: 10px;
   line-height: 30px;
+}
+
+footer {
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+footer p {
+  font-size: 19px;
+  text-align: center;
+}
+footer .socialMedia ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .socialMedia ul li {
+  margin-top: 10px;
+  list-style: none;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
