@@ -23,7 +23,7 @@ body {
   position: absolute;
   height: 29px;
   left: 155px;
-  top: 10px;
+  top: 30px;
   font-family: "Noto Sans", sans-serif6px;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@ body {
   position: absolute;
   width: 100%;
   height: 5vh;
-  margin-top: -50px;
+  margin-top: 55px;
   z-index: 100;
 }
 .nav-bar .toggle {
@@ -52,7 +52,7 @@ nav ul {
   padding: 16px;
   background: #7c619b;
   left: -100%;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   list-style: none;
 }
 nav ul li {
@@ -63,24 +63,29 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-family: inherit;
-  font-size: 21px;
+  font-size: 19px;
 }
 nav ul li:hover {
   background-color: #B8B2B2;
   padding: 10px;
   border-radius: 20px;
-  transition: ease-in-out;
 }
 
 .toggle:checked ~ nav ul {
   left: 0;
 }
 
+.iconify {
+  color: black;
+}
+.iconify:hover {
+  color: #777171;
+}
+
 .hamburger {
   position: absolute;
   font-size: 30px;
   align-items: center;
-  color: black;
   right: 0;
   top: 0;
   margin-top: 5px;
@@ -91,7 +96,6 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
-  color: black;
   left: 0;
   top: 0;
   margin-top: 5px;
@@ -102,7 +106,6 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
-  color: black;
   top: 0;
   margin-top: 5px;
   margin-left: -15px;
@@ -112,70 +115,27 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
-  color: black;
   top: 0;
   margin-top: 5px;
   margin-left: 120px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 120px;
-  font-weight: 100;
-}
-
-h2 {
-  text-align: center;
-  font-size: 21px;
-  font-weight: 100;
-  margin-top: 20px;
-}
-
-label {
-  font-size: 18px;
-}
-
-.iconify {
-  color: black;
-  transition: 0.5s ease in;
-}
-.iconify:hover {
-  color: #777171;
-}
-
-.signIn {
-  margin-top: 20px;
-  border: 1px solid gray;
-  width: 80%;
-  height: 350px;
-  padding: 20px;
-  text-align: center;
-  margin-left: 40px;
-}
-.signIn .text-input {
+.container {
+  border: 1px solid white;
   width: 90%;
-  height: 5vh;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-size: 15px;
-  font-family: inherit;
+  margin: 100px auto 80px auto;
+  height: 50vh;
 }
-
-.registeration {
-  margin-top: 20px;
-  border: 1px solid gray;
-  width: 80%;
-  height: 660px;
-  padding: 20px;
+.container h1 {
   text-align: center;
-  margin-left: 40px;
+  padding-top: 110px;
 }
-.registeration .textInput {
-  width: 90%;
-  height: 5vh;
-  margin-top: 5px;
-  margin-bottom: 30px;
-  font-size: 15px;
+.container .btn {
+  display: flex;
+  padding: 20px;
+  margin: 40px auto auto auto;
+  background: none;
+  font-size: 19px;
   font-family: inherit;
 }
 
@@ -187,7 +147,7 @@ footer {
   padding: 10px 20px;
 }
 footer p {
-  font-size: 19px;
+  font-size: 17px;
   text-align: center;
 }
 footer #add {
@@ -213,23 +173,4 @@ footer .socialMedia ul li a {
 }
 footer .socialMedia ul li a:hover {
   color: #7c619b;
-}
-
-.signInBtn, .btn {
-  padding: 10px;
-  width: 30%;
-  margin-bottom: 20px;
-  background: none;
-  border-radius: 20px;
-  transition: 1 ease-in-out;
-}
-.signInBtn:hover, .btn:hover {
-  background-color: #7c619b;
-  color: #ffffff;
-}
-
-.val_error {
-  color: #ef2020;
-  font-weight: 100;
-  font-size: 18px;
-}/*# sourceMappingURL=account.css.map */
+}/*# sourceMappingURL=thankyou.css.map */

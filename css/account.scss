@@ -142,12 +142,21 @@ h2{
 label{
     font-size: 18px;
 }
+.iconify{
+    color:black;
+    transition: .5s ease in;
+    &:hover{
+        color:$footer-color1;
+        
+
+    }
+}
 .signIn{
     margin-top: 20px;
     border: 1px solid gray;
     //position: absolute;
     width: 80%;
-    height: 270px;
+    height: 350px;
     padding:20px;
     text-align: center;
     margin-left: 40px;
@@ -168,7 +177,7 @@ label{
         border: 1px solid gray;
         //position: absolute;
         width: 80%;
-        height: 560px;
+        height: 660px;
         padding:20px;
         text-align: center;
         margin-left: 40px;
