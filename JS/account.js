@@ -14,10 +14,10 @@ userPassword.addEventListener("blur",userPasswordVerify,true);
 //Function Validation
 function Signin(){
     //username
-    if(userSignin.value === '' || !eValidation.test(email.value)){
+    if(userSignin.value === ''){
         userSignin.style.border= '3px solid #ef2020';
         document.getElementById('username').style.color ='black';
-        nameError.textContent = "User name is not correct";
+        nameError.textContent = "User name can not be blank";
         userSignin.focus();
         return false;
 
@@ -124,6 +124,13 @@ function Validate(){
         age.focus();
         return false;
     }
+    if(age.value < 18){
+        age.style.border = "3px solid red";
+        document.getElementById('age_div').style.color='black';
+        age_error.textContent = "You have to be at least 18";
+        age.focus();
+        return false;
+    }
 
     //password
     if(password.value ==='' ||password.value != password_confirmation.value ){
@@ -194,20 +201,20 @@ function passwordVerify(){
 function passwordVerify() {
   if (password.value != "") {
   	password.style.border = "3px solid #2db300";
-  	document.getElementById('pass_confirm_div').style.color = "#ffff4d";
-  	document.getElementById('password_div').style.color = "#ffff4d";
+  	document.getElementById('pass_confirm_div').style.color = "#777171";
+  	document.getElementById('password_div').style.color = "#777171";
   	password_error.innerHTML = "";
   	return true;
   }
   if (password.value === password_confirmation.value) {
   	password.style.border = "3px solid #5e6e";
-  	document.getElementById('pass_confirm_div').style.color = "#ffff4d";
+  	document.getElementById('pass_confirm_div').style.color = "#777171";
   	password_error.innerHTML = "";
   	return true;
   }
   if (password.value.lenght >= 8){
     password.style.border = "3px solid #5e6e";
-  	document.getElementById('password_div').style.color = "#ffff4d";
+  	document.getElementById('password_div').style.color = "#777171";
   	password_error.innerHTML = "";
   	return true;
 

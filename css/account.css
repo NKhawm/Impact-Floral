@@ -80,6 +80,7 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
+  color: black;
   right: 0;
   top: 0;
   margin-top: 5px;
@@ -90,6 +91,7 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
+  color: black;
   left: 0;
   top: 0;
   margin-top: 5px;
@@ -100,6 +102,7 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
+  color: black;
   top: 0;
   margin-top: 5px;
   margin-left: -15px;
@@ -109,6 +112,7 @@ nav ul li:hover {
   position: absolute;
   font-size: 30px;
   align-items: center;
+  color: black;
   top: 0;
   margin-top: 5px;
   margin-left: 120px;
@@ -142,9 +146,9 @@ label {
 }
 .signIn .text-input {
   width: 90%;
-  height: 4vh;
+  height: 5vh;
   margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 15px;
   font-family: inherit;
 }
@@ -160,7 +164,7 @@ label {
 }
 .registeration .textInput {
   width: 90%;
-  height: 4vh;
+  height: 5vh;
   margin-top: 5px;
   margin-bottom: 30px;
   font-size: 15px;
