@@ -59,17 +59,19 @@
         <h2>Sign in</h2>
         <div class="signIn">
            
-            <form method="get" action="home.html" name="vform" >
+            <form method="post" action="#"  onsubmit="return Signin()"name="v-form">
                 
                 <div id="username">
-                    <label for="username">Username</label><br>
-                <input class="text-input" name="username" type="text" placeholder="Enter your username or email ">
-                <div id="nameError" class="valError"></div>
+                    <label for="signin-username">Username</label><br>
+                <input class="text-input" name="signin-username" type="text" placeholder="Enter your username or email ">
+                <div id="nameError" class="val_error"></div>
             </div>
 
             <div id="password">
-                <label for="password" >Password</label><br>
-                <input class="text-input" name="password" type="password"placeholder="Enter your password" >
+                <label for="signin-password" >Password</label><br>
+                <input class="text-input" name="signin-password" type="password"placeholder="Enter your password" >
+                <div id="passwordError" class="val_error"></div>
+           
                 </div>
 
             <div>
@@ -82,8 +84,8 @@
     <h2>Create Account</h2>
     <div class="registeration">
        
-        <form method="get" action="home.html" name="vform" >
-           
+        <form method="post" action="#" onsubmit=" return Validate()"name="vform" >
+            
             <div id="username_div">
                 <label for="username">Username</label><br>
             <input class="textInput" name="username" type="text" placeholder="Enter your username ">
@@ -121,6 +123,8 @@
 
         </form>
     </div>
+
+ </div>
         
      </section>
     
@@ -149,5 +153,8 @@
         </div>
 
     </footer>
+    <script src="JQuery/jquery-3.6.0.js"></script>
+    <script src="JQuery/jquery-3.6.0.min.js"></script>
+    <script src="JS/account.js"></script>
 </body>
 </html>
