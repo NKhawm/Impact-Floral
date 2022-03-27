@@ -52,10 +52,39 @@
     <!-- Main section -->
     
     <section class="main">
-        <div id="firstImage">
-            <a href="#"><img src="image/firstP.jpg" alt="first"></a>
-            <h3 id="promo">Mother's Day Special</h3>
-        </div>
+        <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3 </div>
+            <a href="#"><img id="image" src="image/firstP.jpg" alt="first"></a>
+            <div class="text">Promotion 20% off</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3 </div>
+            <a href="#"><img id="image" src="image/secondP.jpg" alt="second"></a>
+            <div class="text">Mother's Day Special</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3 </div>
+            <a href="#"><img id="image" src="image/thirdP.jpg" alt="third"></a>
+            <div class="text">About Us</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">prev</a>
+<a class="next" onclick="plusSlides(1)">next</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
+
         <div id="secondImage">
             <a href="#"><img  src="image/pic12.jpg" alt="second"></a>
         <h3 id="cat">Categories</h3>
@@ -99,5 +128,6 @@
         </div>
 
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>
