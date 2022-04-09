@@ -15,7 +15,8 @@ $color:#7c619b;
     color:black;
 
 }
-
+$tablet-breakpoints:821px;
+$desktop-breakpoints:1181px;
 *{
     margin:0;
     padding:0;
@@ -38,6 +39,17 @@ body{
         right:56.14%;
         top:1.23%;
         bottom:94.49%;
+        @media screen and(min-width:$tablet-breakpoint){
+            width:92px;
+            height: 92px;
+            position: absolute;
+            left:22.33%;
+            right:56.14%;
+            top:1.23%;
+            bottom:94.49%;  
+
+
+        }
     }
     #title{
         position: absolute;
@@ -126,6 +138,11 @@ nav ul{
     top:0;
     margin-top:5px;
     margin-left: 120px;
+    @media screen and(min-width:$tablet-breakpoints){
+        margin-left: 540px;
+        
+
+    }
 
 }
 h1{

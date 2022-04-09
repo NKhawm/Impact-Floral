@@ -9,12 +9,21 @@ $font-color1:#000000;
 $font-color2:#ffffff;
 $font-color3:#B8B2B2;
 $color:#7c619b;
+$tablet-breakpoints:821px;
+$desktop-breakpoints:1181px;
 @mixin icon{
     position: absolute;
     font-size: 30px;
     align-items: center;
     
 
+}
+@mixin icon2{
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top:-25px;
+    
 }
 @mixin pic{
     width:24em;
@@ -29,6 +38,7 @@ $color:#7c619b;
     margin-left: 10px;
     font-weight: 100;
 }
+
 
 
 
@@ -61,6 +71,12 @@ body{
         right:56.14%;
         top:1.23%;
         bottom:94.49%;
+        @media screen and (min-width: $tablet-breakpoints){
+            width: 82px;
+            height: 82px;
+            left:38.33%;
+        }
+       
     }
     h2{
         position: absolute;
@@ -73,6 +89,11 @@ body{
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
+        @media screen and (min-width: $tablet-breakpoints){
+           left: 445px;
+           top:35px;
+        }
+       
 
     }
 .nav-bar{
@@ -132,6 +153,12 @@ nav ul{
     top:0;
     margin-top:5px;
     margin-right:10px;
+    @media screen and (min-width: $tablet-breakpoints){
+        @include icon2();
+        margin-left: 380px;
+        
+    }
+   
 }
 .homebtn{
     @include icon();
@@ -139,6 +166,12 @@ nav ul{
     top:0;
     margin-top:5px;
     margin-left:10px;
+    @media screen and (min-width: $tablet-breakpoints){
+        @include icon2();
+        margin-left: 10px;
+       // margin-top:1px;
+    }
+   
     
 }
 .basketbtn{
@@ -146,6 +179,12 @@ nav ul{
     top:0;
     margin-top:5px;
     margin-left:-15px ;
+    @media screen and (min-width: $tablet-breakpoints){
+        @include icon2();
+        margin-left: 320px;
+        //margin-top:1px;
+    }
+   
 
 }
 .accountbtn{
@@ -153,6 +192,13 @@ nav ul{
     top:0;
     margin-top:5px;
     margin-left: 120px;
+    @media screen and (min-width: $tablet-breakpoints){
+        @include icon2();
+        margin-left: 380px;
+        //margin-top:1px;
+    }
+        
+    
 
 }
 // #firstImage{

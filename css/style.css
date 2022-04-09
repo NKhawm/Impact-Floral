@@ -26,6 +26,13 @@ body {
   top: 1.23%;
   bottom: 94.49%;
 }
+@media screen and (min-width: 821px) {
+  .logo {
+    width: 82px;
+    height: 82px;
+    left: 38.33%;
+  }
+}
 
 h2 {
   position: absolute;
@@ -37,6 +44,12 @@ h2 {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+}
+@media screen and (min-width: 821px) {
+  h2 {
+    left: 445px;
+    top: 35px;
+  }
 }
 
 .nav-bar {
@@ -97,6 +110,15 @@ nav ul li:hover {
   margin-top: 5px;
   margin-right: 10px;
 }
+@media screen and (min-width: 821px) {
+  .hamburger {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 380px;
+  }
+}
 
 .homebtn {
   position: absolute;
@@ -107,6 +129,15 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: 10px;
 }
+@media screen and (min-width: 821px) {
+  .homebtn {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 10px;
+  }
+}
 
 .basketbtn {
   position: absolute;
@@ -116,6 +147,15 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: -15px;
 }
+@media screen and (min-width: 821px) {
+  .basketbtn {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 320px;
+  }
+}
 
 .accountbtn {
   position: absolute;
@@ -124,6 +164,15 @@ nav ul li:hover {
   top: 0;
   margin-top: 5px;
   margin-left: 120px;
+}
+@media screen and (min-width: 821px) {
+  .accountbtn {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 380px;
+  }
 }
 
 /*slide show container*/
