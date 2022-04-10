@@ -281,6 +281,7 @@ label{
         
     }
     
+    
 
 
 
@@ -348,16 +349,17 @@ footer{
     margin-bottom: 20px;
     background: none;
     border-radius: 20px;
-    transition: 1 ease-in-out;
+    background-color: $color;
+    color: $font-color2;
+    font-size: $fontsize-base - 5px;
+    //transition: 1 ease-in-out;
    
-    &:hover{
-            background-color: $color;
-            color:$font-color2;
-             }
+    
 }
 .val_error{
     color:#ef2020;
     font-weight: 100;
     font-size: 18px;
+    //margin-top: -25px;
     //margin-bottom: 20px;
 }
