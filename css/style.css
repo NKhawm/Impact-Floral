@@ -37,6 +37,7 @@ body {
     width: 82px;
     height: 82px;
     left: 38.33%;
+    top: 26px;
   }
 }
 
@@ -54,7 +55,7 @@ h2 {
 @media screen and (min-width: 820px) {
   h2 {
     left: 380px;
-    top: 38px;
+    top: 48px;
   }
 }
 
@@ -86,11 +87,21 @@ nav ul li {
   margin-bottom: 46px;
   margin-left: 16px;
 }
+@media screen and (min-width: 820px) {
+  nav ul li {
+    margin-top: 60px;
+  }
+}
 nav ul li a {
   color: white;
   text-decoration: none;
   font-family: inherit;
   font-size: 21px;
+}
+@media screen and (min-width: 820px) {
+  nav ul li a {
+    font-size: 26px;
+  }
 }
 nav ul li:hover {
   background-color: #B8B2B2;
