@@ -18,6 +18,15 @@ body {
   top: 1.23%;
   bottom: 94.49%;
 }
+@media screen and (min-width: 820px) {
+  .logo {
+    width: 82px;
+    height: 82px;
+    left: 38.33%;
+    top: 26px;
+  }
+}
+
 #title {
   position: absolute;
   height: 29px;
@@ -28,6 +37,12 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+}
+@media screen and (min-width: 820px) {
+  #title {
+    left: 380px;
+    top: 32px;
+  }
 }
 
 .nav-bar {
@@ -58,11 +73,21 @@ nav ul li {
   margin-bottom: 46px;
   margin-left: 16px;
 }
+@media screen and (min-width: 820px) {
+  nav ul li {
+    margin-top: 60px;
+  }
+}
 nav ul li a {
   color: white;
   text-decoration: none;
   font-family: inherit;
   font-size: 21px;
+}
+@media screen and (min-width: 820px) {
+  nav ul li a {
+    font-size: 26px;
+  }
 }
 nav ul li:hover {
   background-color: #B8B2B2;
@@ -85,6 +110,15 @@ nav ul li:hover {
   margin-top: 5px;
   margin-right: 10px;
 }
+@media screen and (min-width: 820px) {
+  .hamburger {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 380px;
+  }
+}
 
 .homebtn {
   position: absolute;
@@ -96,6 +130,15 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: 10px;
 }
+@media screen and (min-width: 820px) {
+  .homebtn {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 10px;
+  }
+}
 
 .basketbtn {
   position: absolute;
@@ -106,6 +149,15 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: -15px;
 }
+@media screen and (min-width: 820px) {
+  .basketbtn {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 240px;
+  }
+}
 
 .accountbtn {
   position: absolute;
@@ -115,6 +167,15 @@ nav ul li:hover {
   top: 0;
   margin-top: 5px;
   margin-left: 120px;
+}
+@media screen and (min-width: 820px) {
+  .accountbtn {
+    position: absolute;
+    font-size: 40px;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 300px;
+  }
 }
 
 h1 {
@@ -129,9 +190,19 @@ h2 {
   font-weight: 100;
   margin-top: 20px;
 }
+@media screen and (min-width: 820px) {
+  h2 {
+    font-size: 26px;
+  }
+}
 
 label {
   font-size: 18px;
+}
+@media screen and (min-width: 820px) {
+  label {
+    font-size: 22px;
+  }
 }
 
 .iconify {
@@ -151,6 +222,11 @@ label {
   text-align: center;
   margin-left: 40px;
 }
+@media screen and (min-width: 820px) {
+  .signIn {
+    margin-left: 80px;
+  }
+}
 .signIn .text-input {
   width: 90%;
   height: 5vh;
@@ -158,6 +234,11 @@ label {
   margin-bottom: 20px;
   font-size: 15px;
   font-family: inherit;
+}
+@media screen and (min-width: 820px) {
+  .signIn .text-input {
+    font-size: 20px;
+  }
 }
 
 .registeration {
@@ -169,6 +250,11 @@ label {
   text-align: center;
   margin-left: 40px;
 }
+@media screen and (min-width: 820px) {
+  .registeration {
+    margin-left: 80px;
+  }
+}
 .registeration .textInput {
   width: 90%;
   height: 5vh;
@@ -176,6 +262,11 @@ label {
   margin-bottom: 30px;
   font-size: 15px;
   font-family: inherit;
+}
+@media screen and (min-width: 820px) {
+  .registeration .textInput {
+    font-size: 20px;
+  }
 }
 
 footer {
