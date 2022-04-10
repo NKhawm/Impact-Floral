@@ -16,6 +16,12 @@ body {
 #image {
   vertical-align: middle;
 }
+@media screen and (min-width: 820px) {
+  #image {
+    width: 50em;
+    height: 30em;
+  }
+}
 
 .logo {
   width: 72px;
@@ -26,7 +32,7 @@ body {
   top: 1.23%;
   bottom: 94.49%;
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 820px) {
   .logo {
     width: 82px;
     height: 82px;
@@ -45,10 +51,10 @@ h2 {
   font-size: 20px;
   line-height: 30px;
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 820px) {
   h2 {
-    left: 445px;
-    top: 35px;
+    left: 380px;
+    top: 38px;
   }
 }
 
@@ -110,12 +116,12 @@ nav ul li:hover {
   margin-top: 5px;
   margin-right: 10px;
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 820px) {
   .hamburger {
     position: absolute;
     font-size: 40px;
     align-items: center;
-    margin-top: -25px;
+    margin-top: -15px;
     margin-left: 380px;
   }
 }
@@ -129,12 +135,12 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: 10px;
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 820px) {
   .homebtn {
     position: absolute;
     font-size: 40px;
     align-items: center;
-    margin-top: -25px;
+    margin-top: -15px;
     margin-left: 10px;
   }
 }
@@ -147,13 +153,13 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: -15px;
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 820px) {
   .basketbtn {
     position: absolute;
     font-size: 40px;
     align-items: center;
-    margin-top: -25px;
-    margin-left: 320px;
+    margin-top: -15px;
+    margin-left: 240px;
   }
 }
 
@@ -165,13 +171,13 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: 120px;
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 820px) {
   .accountbtn {
     position: absolute;
     font-size: 40px;
     align-items: center;
-    margin-top: -25px;
-    margin-left: 380px;
+    margin-top: -15px;
+    margin-left: 300px;
   }
 }
 
@@ -179,6 +185,7 @@ nav ul li:hover {
 .slideshow-container {
   position: relative;
   margin: auto;
+  margin-top: 30px;
 }
 
 .prev, .next {
@@ -217,6 +224,11 @@ nav ul li:hover {
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 820px) {
+  .text {
+    font-size: 44px;
+  }
 }
 
 /*number text*/
@@ -273,6 +285,20 @@ h3 {
   color: #ffffff;
   font-family: inherit;
 }
+@media screen and (min-width: 820px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    margin-left: 18px;
+  }
+}
 
 #promo, #cat, #wed, #funeral {
   position: absolute;
@@ -285,6 +311,11 @@ h3 {
   position: absolute;
   margin-top: -50px;
   margin-left: 10px;
+}
+@media screen and (min-width: 820px) {
+  #cat {
+    margin-left: 40px;
+  }
 }
 
 img {
@@ -299,7 +330,6 @@ img {
   gap: 10px;
   margin-top: 110px;
 }
-
 .phone {
   background-color: #777171;
   width: 100%;

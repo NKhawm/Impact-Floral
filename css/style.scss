@@ -9,7 +9,7 @@ $font-color1:#000000;
 $font-color2:#ffffff;
 $font-color3:#B8B2B2;
 $color:#7c619b;
-$tablet-breakpoints:821px;
+$tablet-breakpoints:820px;
 $desktop-breakpoints:1181px;
 @mixin icon{
     position: absolute;
@@ -22,7 +22,7 @@ $desktop-breakpoints:1181px;
     position: absolute;
     font-size: 40px;
     align-items: center;
-    margin-top:-25px;
+    margin-top:-15px;
     
 }
 @mixin pic{
@@ -31,6 +31,10 @@ $desktop-breakpoints:1181px;
     //position:absolute;
     border-radius: 20px;
 
+}
+@mixin pic2{
+    width:90%;
+    height: 30%;
 }
 @mixin fontmix{
     position:absolute;
@@ -50,12 +54,18 @@ $desktop-breakpoints:1181px;
 }
 body{
     background-color: $header-bgcolor;
+   
 }
 .mySlides{
     display: none;
 }
 #image{
     vertical-align: middle;
+    @media screen and(min-width:$tablet-breakpoints){
+        width: 50em;
+        height: 30em;
+        
+    }
 }
 
 
@@ -90,8 +100,8 @@ body{
         font-size: 20px;
         line-height: 30px;
         @media screen and (min-width: $tablet-breakpoints){
-           left: 445px;
-           top:35px;
+           left: 380px;
+           top:38px;
         }
        
 
@@ -181,7 +191,7 @@ nav ul{
     margin-left:-15px ;
     @media screen and (min-width: $tablet-breakpoints){
         @include icon2();
-        margin-left: 320px;
+        margin-left: 240px;
         //margin-top:1px;
     }
    
@@ -194,7 +204,7 @@ nav ul{
     margin-left: 120px;
     @media screen and (min-width: $tablet-breakpoints){
         @include icon2();
-        margin-left: 380px;
+        margin-left: 300px;
         //margin-top:1px;
     }
         
@@ -224,6 +234,7 @@ nav ul{
 .slideshow-container{
     position: relative;
     margin: auto;
+    margin-top: 30px;
 }
 
 // next & previous buttons
@@ -262,6 +273,10 @@ nav ul{
     bottom:8px;
     width: 100%;
     text-align: center;
+    @media screen and(min-width:$tablet-breakpoints) {
+        font-size:$fontsize-base +23px ;
+        
+    }
 }
 
 /*number text*/
@@ -305,6 +320,19 @@ h3{
     font-size: $fontsize-base + 10px;
     color:$font-color2;
     font-family: inherit;
+    @media screen and(min-width:$tablet-breakpoints) {
+        font-size: $fontsize-base + 15px;
+        
+    }
+}
+.main2{
+    @media screen and(min-width:$tablet-breakpoints) {
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        row-gap: 12px;
+        margin-left: 18px;
+        
+    }
 }
 #promo,#cat,#wed,#funeral{
     @include fontmix();
@@ -315,12 +343,17 @@ h3{
     position:absolute;
     margin-top: -50px;
     margin-left: 10px;
+    @media screen and(min-width:$tablet-breakpoints) {
+        margin-left: 40px;
+        
+    }
     
 
 }
 
 img{
     @include pic();
+    
 }
 .main{
     display :grid;
@@ -328,6 +361,10 @@ img{
     gap:10px;
     //top:0;
     margin-top: 110px;
+    @media screen and(min-width:$tablet-breakpoints){
+         
+        
+    }
     
     
 }
