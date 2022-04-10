@@ -22,7 +22,7 @@ body {
   .logo {
     width: 82px;
     height: 82px;
-    left: 38.33%;
+    left: 36.33%;
     top: 26px;
   }
 }
@@ -40,7 +40,7 @@ body {
 }
 @media screen and (min-width: 810px) {
   #title {
-    left: 380px;
+    left: 365px;
     top: 32px;
   }
 }

@@ -196,7 +196,8 @@ nav ul li:hover {
 .slideshow-container {
   position: relative;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 @media screen and (min-width: 810px) {
   .slideshow-container {
@@ -260,7 +261,6 @@ nav ul li:hover {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
   background-color: #777171;
   border-radius: 50%;
   display: inline-block;
@@ -312,6 +312,12 @@ h3 {
   }
 }
 
+.main2 {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
 @media screen and (min-width: 810px) {
   .main2 {
     display: grid;
@@ -343,6 +349,7 @@ img {
   width: 24em;
   height: 15em;
   border-radius: 20px;
+  align-items: center;
 }
 
 .main {
@@ -351,6 +358,7 @@ img {
   gap: 10px;
   margin-top: 110px;
 }
+
 .phone {
   background-color: #777171;
   width: 100%;
