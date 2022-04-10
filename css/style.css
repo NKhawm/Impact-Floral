@@ -18,7 +18,7 @@ body {
 }
 @media screen and (min-width: 820px) {
   #image {
-    width: 50em;
+    width: 49em;
     height: 30em;
   }
 }
@@ -198,6 +198,11 @@ nav ul li:hover {
   margin: auto;
   margin-top: 30px;
 }
+@media screen and (min-width: 820px) {
+  .slideshow-container {
+    margin-bottom: -20px;
+  }
+}
 
 .prev, .next {
   cursor: pointer;
@@ -260,6 +265,11 @@ nav ul li:hover {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+@media screen and (min-width: 820px) {
+  .dot {
+    margin-bottom: 10px;
+  }
 }
 
 .active, .dot:hover {

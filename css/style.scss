@@ -62,7 +62,7 @@ body{
 #image{
     vertical-align: middle;
     @media screen and(min-width:$tablet-breakpoints){
-        width: 50em;
+        width: 49em;
         height: 30em;
         
     }
@@ -246,6 +246,11 @@ nav ul{
     position: relative;
     margin: auto;
     margin-top: 30px;
+    @media screen and (min-width:$tablet-breakpoints) {
+        margin-bottom:-20px;
+        
+        
+    }
 }
 
 // next & previous buttons
@@ -307,6 +312,12 @@ nav ul{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    @media screen and (min-width:$tablet-breakpoints) {
+        //margin-bottom:10px;
+        margin-bottom: 10px;
+        
+        
+    }
 
 }
 .active, .dot:hover{
