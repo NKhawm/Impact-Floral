@@ -352,6 +352,11 @@ footer{
     background-color: $color;
     color: $font-color2;
     font-size: $fontsize-base - 5px;
+    @media screen and (min-width:$tablet-breakpoints) {
+        padding:15px;
+        font-size: $fontsize-base;
+    }
+
     //transition: 1 ease-in-out;
    
     

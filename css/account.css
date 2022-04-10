@@ -315,6 +315,12 @@ footer .socialMedia ul li a:hover {
   color: #ffffff;
   font-size: 16px;
 }
+@media screen and (min-width: 810px) {
+  .signInBtn, .btn {
+    padding: 15px;
+    font-size: 21px;
+  }
+}
 
 .val_error {
   color: #ef2020;
