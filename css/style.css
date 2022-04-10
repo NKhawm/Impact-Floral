@@ -16,7 +16,7 @@ body {
 #image {
   vertical-align: middle;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   #image {
     width: 49em;
     height: 30em;
@@ -32,7 +32,7 @@ body {
   top: 1.23%;
   bottom: 94.49%;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .logo {
     width: 82px;
     height: 82px;
@@ -52,7 +52,7 @@ h2 {
   font-size: 20px;
   line-height: 30px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   h2 {
     left: 380px;
     top: 48px;
@@ -87,7 +87,7 @@ nav ul li {
   margin-bottom: 46px;
   margin-left: 16px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   nav ul li {
     margin-top: 60px;
   }
@@ -98,7 +98,7 @@ nav ul li a {
   font-family: inherit;
   font-size: 21px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   nav ul li a {
     font-size: 26px;
   }
@@ -127,7 +127,7 @@ nav ul li:hover {
   margin-top: 5px;
   margin-right: 10px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .hamburger {
     position: absolute;
     font-size: 40px;
@@ -146,7 +146,7 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: 10px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .homebtn {
     position: absolute;
     font-size: 40px;
@@ -164,7 +164,7 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: -15px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .basketbtn {
     position: absolute;
     font-size: 40px;
@@ -182,7 +182,7 @@ nav ul li:hover {
   margin-top: 5px;
   margin-left: 120px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .accountbtn {
     position: absolute;
     font-size: 40px;
@@ -198,7 +198,7 @@ nav ul li:hover {
   margin: auto;
   margin-top: 30px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .slideshow-container {
     margin-bottom: -20px;
   }
@@ -241,7 +241,7 @@ nav ul li:hover {
   width: 100%;
   text-align: center;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .text {
     font-size: 44px;
   }
@@ -266,7 +266,7 @@ nav ul li:hover {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .dot {
     margin-bottom: 10px;
   }
@@ -306,13 +306,13 @@ h3 {
   color: #ffffff;
   font-family: inherit;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   h3 {
     font-size: 36px;
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   .main2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -333,7 +333,7 @@ h3 {
   margin-top: -50px;
   margin-left: 10px;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 810px) {
   #cat {
     margin-left: 40px;
   }
