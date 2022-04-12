@@ -42,7 +42,8 @@ img {
 .nav-bar {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   background-color: #7c619b;
   margin-bottom: 2px;
   border-radius: 10px 10px 0 0;
@@ -94,7 +95,7 @@ nav ul li a:hover {
   position: relative;
   margin-top: 1px;
   z-index: 100;
-  margin-left: 365px;
+  margin-left: 345px;
 }
 
 .iconify {
