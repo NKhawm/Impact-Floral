@@ -128,7 +128,7 @@ nav ul{
 }
 .slideshow-container{
     position: relative;
-    max-width: 1600px;
+    max-width: 1400px;
     margin:auto;
    //margin-right: auto;
     margin-top: 10px;
@@ -349,17 +349,14 @@ footer{
             max-width: 2000px;
             margin:auto;
             display: flex;
-            //margin-bottom: 60px;
-            //align-items: center;
-          
-
          }
          nav ul{
             all:unset;
             position: absolute;
             display: flex;
-           
-            gap: 2rem;
+            flex-direction: row;
+            justify-content:center;
+            gap: 5rem;
             list-style: none;
             //margin-left: 6.5rem;
             li{
@@ -408,7 +405,7 @@ footer{
         margin-bottom: 10px;
     }
     .main2{
-        max-width: 1600px;
+        max-width: 1400px;
         width: 100%;
         display :grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -442,14 +439,34 @@ footer{
     }
     #image{
         width: 100%;
-        min-height: 800px;
+        min-height: 650px;
     }
 
     footer{
-        height: 10em;
+        height: 12em;
+        .socialMedia{
+            p{
+                font-size: $fontsize-base +5px; 
+                align-items: center;
+            }
+        }
+        .address{
+            p{
+                font-size: $fontsize-base +5px; 
+                align-items: center;
+            }
+            ul{
+                font-size: 20px;
+                
+            }
+        }
         .useful-links{
             display: block;
             text-align: center;
+            p{
+                font-size: $fontsize-base +5px; 
+                align-items: center;
+            }
             ul{
                 list-style: none;
                 font-size: 20px;
@@ -466,8 +483,6 @@ footer{
       
         }
         }
-        p{
-            font-size: $fontsize-base +5px; 
-        }
+       
     }
 

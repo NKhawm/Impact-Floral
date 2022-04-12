@@ -175,6 +175,9 @@ footer .socialMedia ul li a {
 footer .socialMedia ul li a:hover {
   color: #7c619b;
 }
+footer .useful-links {
+  display: none;
+}
 
 @media screen and (min-width: 1000px) {
   .iconify {
@@ -182,7 +185,8 @@ footer .socialMedia ul li a:hover {
   }
 
   .brand {
-    margin-left: 10px;
+    max-width: 1200px;
+    margin: auto;
   }
   .brand h2 {
     font-size: 21px;
@@ -203,12 +207,17 @@ footer .socialMedia ul li a:hover {
   .nav-bar .accountbtn {
     position: absolute;
     margin-top: -65px;
-    margin-left: 59rem;
+    margin-left: auto;
   }
   .nav-bar .basketbtn {
     position: absolute;
     margin-top: -65px;
-    margin-left: 56rem;
+    margin-left: 3rem;
+  }
+  .nav-bar nav {
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
   }
   .nav-bar nav ul {
     all: unset;
@@ -216,22 +225,36 @@ footer .socialMedia ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 5rem;
     list-style: none;
-    margin-left: 6.5rem;
   }
   .nav-bar nav ul li a {
     color: #000000;
-    font-size: 19px;
+    font-size: 24px;
     font-family: inherit;
   }
 
   footer {
-    height: 10em;
+    height: 12em;
+  }
+  footer .socialMedia p {
+    font-size: 24px;
+    align-items: center;
+  }
+  footer .address p {
+    font-size: 24px;
+    align-items: center;
+  }
+  footer .address ul {
+    font-size: 20px;
   }
   footer .useful-links {
     display: block;
     text-align: center;
+  }
+  footer .useful-links p {
+    font-size: 24px;
+    align-items: center;
   }
   footer .useful-links ul {
     list-style: none;
@@ -241,9 +264,5 @@ footer .socialMedia ul li a:hover {
   footer .useful-links ul li a {
     text-decoration: none;
     color: black;
-  }
-
-  p {
-    font-size: 24px;
   }
 }/*# sourceMappingURL=thankyou.css.map */

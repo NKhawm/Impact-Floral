@@ -240,7 +240,7 @@ label{
         //position: absolute;
         max-width: 450px;
         margin:auto;
-         height: 500px;
+         height: 600px;
         padding:20px;
         text-align: center;
         //margin-left: 40px;
@@ -303,6 +303,9 @@ label{
                 }
             }
         }
+        .useful-links{
+            display:none;
+        }
     }
     
     .signInBtn,.btn{
@@ -335,14 +338,16 @@ label{
             font-size: 35px;
         }
         .brand{
-            margin-left: 10px;
+            //position:absolute;
+            max-width: 1200px;
+            margin:auto;
             h2{
             font-size: $fontsize-base +2px;
             line-height: 50px;
         }
         .logo{
-            width: 82px;
-            height: 82px;
+            width: 92px;
+            height: 92px;
         }
        }
            .nav-bar{
@@ -351,32 +356,40 @@ label{
                .homebtn,.hamburger{
                    position: absolute;
                    display: none;
+                  
                }
                .accountbtn{
                    position: absolute;
                    margin-top: -65px;
-                   margin-left:59rem;
+                   margin-left:auto;
                    
                }
                .basketbtn{
                    position: absolute;
                    margin-top: -65px;
-                   margin-left:56rem;
+                   margin-left:3rem;
                   
                }
-               nav ul{
+               
+                 nav{
+                   max-width: 2000px;
+                   margin:auto;
+                   display: flex;
+                }
+                nav ul{
                    all:unset;
                    position: absolute;
                    display: flex;
                    flex-direction: row;
                    justify-content:center;
-                   gap: 30px;
+                   gap: 5rem;
                    list-style: none;
-                   margin-left: 6.5rem;
+                   //margin-left: 6.5rem;
                    li{
+                       
                       a{
                           color:$font-color1;
-                          font-size: $fontsize-base;
+                          font-size: $fontsize-base +5px;
                           font-family: inherit;
                       }
                    }
@@ -384,18 +397,40 @@ label{
                }
        
            }
-           .main{
+          
+           
+              .main{
                display: grid;
                grid-template-columns: 1fr 1fr;
+               
            }
           
            
            
            footer{
-            height: 10em;
+            height: 12em;
+            .socialMedia{
+                p{
+                    font-size: $fontsize-base +5px; 
+                    align-items: center;
+                }
+            }
+            .address{
+                p{
+                    font-size: $fontsize-base +5px; 
+                    align-items: center;
+                }
+                ul{
+                    font-size: 20px;
+                }
+            }
             .useful-links{
                 display: block;
                 text-align: center;
+                p{
+                    font-size: $fontsize-base +5px; 
+                    align-items: center;
+                }
                 ul{
                     list-style: none;
                     font-size: 20px;
@@ -412,9 +447,7 @@ label{
           
             }
             }
-            p{
-                font-size: $fontsize-base +5px; 
-            }
+        
         }
     
            

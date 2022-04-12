@@ -104,7 +104,7 @@ nav ul li a:hover {
 
 .slideshow-container {
   position: relative;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: -20px;
@@ -318,7 +318,9 @@ footer .socialMedia ul li a:hover {
     all: unset;
     position: absolute;
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
     list-style: none;
   }
   .nav-bar nav ul li a {
@@ -359,7 +361,7 @@ footer .socialMedia ul li a:hover {
   }
 
   .main2 {
-    max-width: 1600px;
+    max-width: 1400px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -385,15 +387,30 @@ footer .socialMedia ul li a:hover {
 
   #image {
     width: 100%;
-    min-height: 800px;
+    min-height: 650px;
   }
 
   footer {
-    height: 10em;
+    height: 12em;
+  }
+  footer .socialMedia p {
+    font-size: 26px;
+    align-items: center;
+  }
+  footer .address p {
+    font-size: 26px;
+    align-items: center;
+  }
+  footer .address ul {
+    font-size: 20px;
   }
   footer .useful-links {
     display: block;
     text-align: center;
+  }
+  footer .useful-links p {
+    font-size: 26px;
+    align-items: center;
   }
   footer .useful-links ul {
     list-style: none;
@@ -403,9 +420,5 @@ footer .socialMedia ul li a:hover {
   footer .useful-links ul li a {
     text-decoration: none;
     color: black;
-  }
-
-  p {
-    font-size: 26px;
   }
 }/*# sourceMappingURL=stylecopy.css.map */
