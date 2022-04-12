@@ -331,6 +331,11 @@ footer .socialMedia ul li a:hover {
     font-family: inherit;
   }
 
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   footer {
     height: 10em;
   }
