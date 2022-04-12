@@ -8,8 +8,8 @@ $font-color1:#000000;
 $font-color2:#ffffff;
 $font-color3:#B8B2B2;
 $color:#7c619b;
-$tablet-breakpoints:810px;
-$desktop-breakpoints:1181px;
+$tablet-breakpoints:668px;
+$desktop-breakpoints:1000px;
 @mixin icon{
     position: absolute;
     font-size: 30px;
@@ -84,7 +84,7 @@ nav ul{
     position: absolute;
     margin-top:1px;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     padding:16px;
     left:-100%;
     border-radius: 0 0 10px 10px;
@@ -172,7 +172,7 @@ nav ul{
 
 h1{
     text-align: center;
-    margin-top: 120px;
+    margin-top: 60px;
     font-weight: 100;
 
     
@@ -210,16 +210,13 @@ label{
     margin-top: 20px;
     border: 1px solid gray;
     //position: absolute;
-    width: 80%;
+    max-width: 450px;
+    margin:auto;
     height: 300px;
     padding:20px;
     text-align: center;
-    margin-left: 40px;
-    @media screen and(min-width:$tablet-breakpoints){
-        margin-left:80px;
-        height: 350px;
-        
-    }
+    //margin-left: 40px;
+   
     .text-input{
         width: 90%;
         height: 5vh;
@@ -241,21 +238,18 @@ label{
         margin-top: 20px;
         border: 1px solid gray;
         //position: absolute;
-        width: 80%;
-        height: 620px;
+        max-width: 450px;
+        margin:auto;
+         height: 500px;
         padding:20px;
         text-align: center;
-        margin-left: 40px;
-        @media screen and(min-width:$tablet-breakpoints){
-            margin-left:80px;
-            height:700px ;
-            
-        }
+        //margin-left: 40px;
+        
         .textInput{
             width: 90%;
             height: 5vh;
             margin-top:5px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-size: 15px;
             font-family: inherit;
 
@@ -266,91 +260,175 @@ label{
         }
         
     }
+    footer{
+        background-color: $footer-color2;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding:10px 20px;
+        p{
+            font-size: $fontsize-base - 2px;
+            text-align: center;
+        
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    background-color: $footer-color2;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding:10px 20px;
-    p{
-        font-size: $fontsize-base - 2px;
-        text-align: center;
-    
-
-    }
-    #add{
-        text-align: center;
-        list-style: none;
-        a{
-            text-decoration: none;
-            color:$font-color1;
         }
-
-    }
-    .socialMedia{
-        //margin-left: -50px;
-       
+        #add{
+            text-align: center;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color:$font-color1;
+            }
     
-        ul{
-            margin-top: 10px;
-            display:flex;
-            justify-content: space-around;
-            li{
+        }
+        .socialMedia{
+            //margin-left: -50px;
+           
+        
+            ul{
                 margin-top: 10px;
-                list-style: none;
-                font-size: 30px;
-               a{
-                   color:$font-color1;
-                   &:hover{
-                       //opacity:.5;
-                       color:$color;
+                display:flex;
+                justify-content: space-around;
+                li{
+                    margin-top: 10px;
+                    list-style: none;
+                    font-size: 30px;
+                   a{
+                       color:$font-color1;
+                       &:hover{
+                           //opacity:.5;
+                           color:$color;
+                       }
                    }
-               }
+                }
             }
         }
     }
-}
-
-.signInBtn,.btn{
-    padding:10px;
-    width: 30%;
-    margin-bottom: 20px;
-    background: none;
-    border-radius: 20px;
-    background-color: $color;
-    color: $font-color2;
-    font-size: $fontsize-base - 5px;
-    @media screen and (min-width:$tablet-breakpoints) {
-        padding:15px;
-        font-size: $fontsize-base;
-    }
-
-    //transition: 1 ease-in-out;
-   
     
-}
-.val_error{
-    color:#ef2020;
-    font-weight: 100;
-    font-size: 18px;
-    //margin-top: -25px;
-    //margin-bottom: 20px;
-}
+    .signInBtn,.btn{
+        padding:10px;
+        width: 30%;
+        margin-bottom: 20px;
+        background: none;
+        border-radius: 20px;
+        background-color: $color;
+        color: $font-color2;
+        font-size: $fontsize-base - 5px;
+        @media screen and (min-width:$tablet-breakpoints) {
+            padding:15px;
+            font-size: $fontsize-base;
+        }
+    
+        //transition: 1 ease-in-out;
+       
+        
+    }
+    .val_error{
+        color:#ef2020;
+        font-weight: 100;
+        font-size: 18px;
+        //margin-top: -25px;
+        //margin-bottom: 20px;
+    }
+    @media screen and(min-width:$desktop-breakpoints){
+        .iconify{
+            font-size: 35px;
+        }
+        .brand{
+            margin-left: 10px;
+            h2{
+            font-size: $fontsize-base +2px;
+            line-height: 50px;
+        }
+        .logo{
+            width: 92px;
+            height: 92px;
+        }
+       }
+           .nav-bar{
+               border-bottom: none;
+               
+               .homebtn,.hamburger{
+                   position: absolute;
+                   display: none;
+               }
+               .accountbtn{
+                   position: absolute;
+                   margin-top: -65px;
+                   margin-left:59rem;
+                   
+               }
+               .basketbtn{
+                   position: absolute;
+                   margin-top: -65px;
+                   margin-left:56rem;
+                  
+               }
+               nav ul{
+                   all:unset;
+                   position: absolute;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content:center;
+                   gap: 30px;
+                   list-style: none;
+                   margin-left: 6.5rem;
+                   li{
+                      a{
+                          color:$font-color1;
+                          font-size: $fontsize-base;
+                          font-family: inherit;
+                      }
+                   }
+                   
+               }
+       
+           }
+          
+           
+           
+           footer{
+            height: 10em;
+            .useful-links{
+                display: block;
+                text-align: center;
+                ul{
+                    list-style: none;
+                    font-size: 20px;
+                    margin-top: 10px;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color:black;
+                        }
+                        
+                    }
+                }
+                
+          
+            }
+            }
+            p{
+                font-size: $fontsize-base +5px; 
+            }
+        }
+    
+           
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+

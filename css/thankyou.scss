@@ -8,6 +8,9 @@ $font-color1:#000000;
 $font-color2:#ffffff;
 $font-color3:#B8B2B2;
 $color:#7c619b;
+$tablet-breakpoints:668px;
+$desktop-breakpoints:1000px;
+
 @mixin icon{
     position: absolute;
     font-size: 30px;
@@ -139,14 +142,14 @@ nav ul{
 }*/
 .container{
     border: 1px solid white;
-    width: 90%;
-    margin: 100px auto 80px auto;
+    max-width: 445px;
+    margin:auto;
     height: 50vh;
     //padding: 50px;
     
     h1{
         text-align: center;
-        padding-top: 110px;
+        padding-top: 90px;
        
     }
     .btn{
@@ -205,6 +208,101 @@ footer{
         }
     }
 }
+@media screen and(min-width:$desktop-breakpoints) {
+    .iconify{
+        font-size: 35px;
+    }
+    .brand{
+        margin-left: 10px;
+        h2{
+        font-size: $fontsize-base +2px;
+        line-height: 90px;
+    }
+    .logo{
+        width: 92px;
+        height: 92px;
+    }
+   }
+       .nav-bar{
+           border-bottom: none;
+           
+           .homebtn,.hamburger{
+               position: absolute;
+               display: none;
+           }
+           .accountbtn{
+               position: absolute;
+               margin-top: -65px;
+               margin-left:59rem;
+               
+           }
+           .basketbtn{
+               position: absolute;
+               margin-top: -65px;
+               margin-left:56rem;
+              
+           }
+           nav ul{
+               all:unset;
+               position: absolute;
+               display: flex;
+               flex-direction: row;
+               justify-content:center;
+               gap: 30px;
+               list-style: none;
+               margin-left: 6.5rem;
+               li{
+                  a{
+                      color:$font-color1;
+                      font-size: $fontsize-base;
+                      font-family: inherit;
+                  }
+               }
+               
+           }
+   
+       }
+      
+       
+       
+       footer{
+        height: 10em;
+        .useful-links{
+            display: block;
+            text-align: center;
+            ul{
+                list-style: none;
+                font-size: 20px;
+                margin-top: 10px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:black;
+                    }
+                    
+                }
+            }
+            
+      
+        }
+        }
+        p{
+            font-size: $fontsize-base +5px; 
+        }
+    }
+
+       
+    
+
+
+
+
+
+
+
+
+    
+
 
 
 

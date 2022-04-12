@@ -123,13 +123,13 @@ nav ul li a:hover {
 }*/
 .container {
   border: 1px solid white;
-  width: 90%;
-  margin: 100px auto 80px auto;
+  max-width: 445px;
+  margin: auto;
   height: 50vh;
 }
 .container h1 {
   text-align: center;
-  padding-top: 110px;
+  padding-top: 90px;
 }
 .container .btn {
   display: flex;
@@ -174,4 +174,76 @@ footer .socialMedia ul li a {
 }
 footer .socialMedia ul li a:hover {
   color: #7c619b;
+}
+
+@media screen and (min-width: 1000px) {
+  .iconify {
+    font-size: 35px;
+  }
+
+  .brand {
+    margin-left: 10px;
+  }
+  .brand h2 {
+    font-size: 21px;
+    line-height: 90px;
+  }
+  .brand .logo {
+    width: 92px;
+    height: 92px;
+  }
+
+  .nav-bar {
+    border-bottom: none;
+  }
+  .nav-bar .homebtn, .nav-bar .hamburger {
+    position: absolute;
+    display: none;
+  }
+  .nav-bar .accountbtn {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 59rem;
+  }
+  .nav-bar .basketbtn {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 56rem;
+  }
+  .nav-bar nav ul {
+    all: unset;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-left: 6.5rem;
+  }
+  .nav-bar nav ul li a {
+    color: #000000;
+    font-size: 19px;
+    font-family: inherit;
+  }
+
+  footer {
+    height: 10em;
+  }
+  footer .useful-links {
+    display: block;
+    text-align: center;
+  }
+  footer .useful-links ul {
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  footer .useful-links ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=thankyou.css.map */
