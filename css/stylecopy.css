@@ -252,4 +252,148 @@ footer .socialMedia ul li a {
 }
 footer .socialMedia ul li a:hover {
   color: #7c619b;
+}
+
+@media screen and (min-width: 668px) {
+  #image {
+    width: 100%;
+    height: 25em;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+  }
+}
+@media screen and (min-width: 668px) {
+  .iconify {
+    font-size: 40px;
+  }
+
+  .brand h2 {
+    font-size: 26px;
+  }
+  .brand .logo {
+    width: 92px;
+    height: 92px;
+  }
+
+  .nav-bar {
+    border-bottom: none;
+  }
+  .nav-bar .homebtn, .nav-bar .hamburger {
+    position: absolute;
+    display: none;
+  }
+  .nav-bar .accountbtn {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 116em;
+  }
+  .nav-bar .basketbtn {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 112em;
+  }
+  .nav-bar nav ul {
+    all: unset;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    margin-left: 320px;
+  }
+  .nav-bar nav ul li a {
+    color: #000000;
+    font-size: 26px;
+    font-family: inherit;
+  }
+
+  #image {
+    width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+  }
+
+  .text {
+    font-size: 41px;
+    bottom: 60px;
+  }
+
+  .prev {
+    font-size: 20px;
+    padding: 16px;
+    top: 50%;
+    margin-left: 35px;
+  }
+
+  .next {
+    font-size: 20px;
+    padding: 16px;
+    top: 50%;
+    margin-right: 35px;
+  }
+
+  .numbertext {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 70px;
+  }
+
+  .dot {
+    margin-top: 20px;
+  }
+
+  .main2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 80px;
+    margin-right: 80px;
+    row-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .main2 #secondImage {
+    grid-row: 1;
+    grid-column: span 3;
+    margin-left: 150px;
+  }
+
+  #img-id {
+    min-width: 1472px;
+    min-height: 480px;
+  }
+
+  img {
+    width: 30em;
+    height: 20em;
+  }
+
+  footer {
+    height: 10em;
+  }
+  footer .useful-links {
+    display: block;
+  }
+  footer .useful-links ul {
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  footer .useful-links ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    font-size: 26px;
+  }
 }/*# sourceMappingURL=stylecopy.css.map */
