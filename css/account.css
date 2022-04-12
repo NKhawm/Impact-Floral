@@ -312,12 +312,12 @@ footer .useful-links {
   .nav-bar .accountbtn {
     position: absolute;
     margin-top: -65px;
-    margin-left: auto;
+    margin-left: 3.5rem;
   }
   .nav-bar .basketbtn {
     position: absolute;
     margin-top: -65px;
-    margin-left: 3rem;
+    margin-left: 6.5rem;
   }
   .nav-bar nav {
     max-width: 2000px;

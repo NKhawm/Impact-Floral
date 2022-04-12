@@ -142,9 +142,10 @@ nav ul{
 }*/
 .container{
     border: 1px solid white;
-    max-width: 445px;
-    margin:auto;
-    height: 50vh;
+    max-width: 545px;
+    margin:50px auto 240px auto;
+    height: 40vh;
+    
     //padding: 50px;
     
     h1{
@@ -239,13 +240,13 @@ footer{
            .accountbtn{
                position: absolute;
                margin-top: -65px;
-               margin-left:auto;
+               margin-left:3.5rem;
                
            }
            .basketbtn{
                position: absolute;
                margin-top: -65px;
-               margin-left:3rem;
+               margin-left:6.5rem;
               
            }
            

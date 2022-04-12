@@ -106,7 +106,7 @@ nav ul li a:hover {
   position: relative;
   max-width: 1400px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 70px;
   margin-bottom: -20px;
 }
 
@@ -302,12 +302,12 @@ footer .socialMedia ul li a:hover {
   .nav-bar .accountbtn {
     position: absolute;
     margin-top: -65px;
-    margin-left: auto;
+    margin-left: 3.5rem;
   }
   .nav-bar .basketbtn {
     position: absolute;
     margin-top: -65px;
-    margin-left: 3rem;
+    margin-left: 6.5rem;
   }
   .nav-bar nav {
     max-width: 2000px;
