@@ -227,12 +227,13 @@ label{
     border: 1px solid gray;
     //position: absolute;
     width: 80%;
-    height: 350px;
+    height: 300px;
     padding:20px;
     text-align: center;
     margin-left: 40px;
     @media screen and(min-width:$tablet-breakpoints){
         margin-left:80px;
+        height: 350px;
         
     }
     .text-input{
@@ -257,12 +258,13 @@ label{
         border: 1px solid gray;
         //position: absolute;
         width: 80%;
-        height: 660px;
+        height: 620px;
         padding:20px;
         text-align: center;
         margin-left: 40px;
         @media screen and(min-width:$tablet-breakpoints){
             margin-left:80px;
+            height:700px ;
             
         }
         .textInput{

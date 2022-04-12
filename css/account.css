@@ -217,7 +217,7 @@ label {
   margin-top: 20px;
   border: 1px solid gray;
   width: 80%;
-  height: 350px;
+  height: 300px;
   padding: 20px;
   text-align: center;
   margin-left: 40px;
@@ -225,6 +225,7 @@ label {
 @media screen and (min-width: 810px) {
   .signIn {
     margin-left: 80px;
+    height: 350px;
   }
 }
 .signIn .text-input {
@@ -245,7 +246,7 @@ label {
   margin-top: 20px;
   border: 1px solid gray;
   width: 80%;
-  height: 660px;
+  height: 620px;
   padding: 20px;
   text-align: center;
   margin-left: 40px;
@@ -253,6 +254,7 @@ label {
 @media screen and (min-width: 810px) {
   .registeration {
     margin-left: 80px;
+    height: 700px;
   }
 }
 .registeration .textInput {
