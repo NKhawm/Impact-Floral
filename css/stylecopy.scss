@@ -11,6 +11,13 @@ $color:#7c619b;
 $tablet-breakpoints:668px;
 $desktop-breakpoints:1000px;
 
+@mixin fontmix{
+    position:absolute;
+    margin-top:-50px;
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: $fontsize-base +5px;
+}
 
 *{
     box-sizing: border-box;
@@ -22,10 +29,16 @@ body{
 }
 #image{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 10px;
  
+}
+img{
+    width: 100%;
+    height:15em;
+    border-radius: 10px;
+
 }
 .brand{
     display: flex;
@@ -36,17 +49,18 @@ body{
         height: 72px;
     }
     h2{
-        font-family:$myfont;
-        font-family:$myfont +6px;
-        font-style: normal;
+        font-family:cursive;
+        margin-left: -16px;
+       font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size:$fontsize-base;
         line-height: 40px;
     }
     
 }
 .nav-bar{
     width: 100%;
+   
     display: flex;
     justify-content:space-around;
     background-color: #7c619b;
@@ -54,7 +68,7 @@ body{
     border-bottom: 1px solid grey;
     position: absolute;
     text-align: center;
-   z-index: 100;
+    z-index: 100;
 
 }
 .toggle{
@@ -62,15 +76,16 @@ body{
 }
 nav ul{
     position: absolute;
-    margin-top:20px;
+    margin-top:33px;
     width: 100%;
     height: 60vh;
     padding:16px;
-    left:-100%;
+    left:100%;
     background-color: $color;
     transition: all .5s;
     list-style: none;
     text-align: center;
+    z-index: 100;
     li{
         margin-bottom:46px ;
         margin-left:16px ;
@@ -91,6 +106,15 @@ nav ul{
 }
 .toggle:checked ~ nav ul{
     left:0;
+}
+.hamburger{
+    position: absolute;
+    margin-top: 1px;
+    z-index: 100;
+    margin-left: 330px;
+   
+
+   
 }
 .iconify{
     color:black;
@@ -134,7 +158,7 @@ nav ul{
 
 .text{
     color:$font-color2;
-    font-size: $fontsize-base;
+    font-size: $fontsize-base +2px;
     padding:8px 12px;
     position: absolute;
     bottom:8px;
@@ -181,4 +205,74 @@ h3{
     font-size: $fontsize-base + 10px;
     color:$font-color2;
     font-family: inherit;
+}
+#promo,#cat,#wed,#funeral{
+    @include fontmix();
+    
+
+}
+.phone{
+    background-color: $footer-color1;
+    width:100%;
+    margin: -20px auto;
+    
+   #ad{ 
+    text-align: center;
+    color:$font-color2;
+    font-size: $fontsize-base;
+    line-height: 30px;
+
+}
+    
+}
+footer{
+    background-color: $footer-color2;
+    display: flex;
+   justify-content: space-between;
+    padding:10px 20px;
+    
+    p{
+        font-size: $fontsize-base - 2px;
+        text-align:end;
+    }
+    .useful-links{
+        display:none;
+    }
+
+#add{
+    text-align:end;
+    list-style: none;
+   
+    a{
+        text-decoration: none;
+        color:$font-color1;
+    }
+}
+
+
+.socialMedia{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-left: -40px;
+        li{
+            a{
+                color: $font-color1;
+                &:hover{
+                    color:$color;
+                }
+            }
+        }
+
+    }
+    
+   
+
+   
+
+
+}
+
+
 }
